@@ -23,7 +23,6 @@ html {
   max-width: 1310px;
   margin: 0 auto;
   padding: 0 60px;
-  background-color: $color-primary;
 }
 
 img {
@@ -39,4 +38,55 @@ ol {
 a {
   text-decoration: none;
   background-color: transparent;
+  color: inherit;
+}
+
+/* Header styles */
+.header-top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  border-bottom: 1px solid #ececec;
+  color: #7e7e7e;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: $font-secondary;
+
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+
+    .phone-link {
+      color: $color-primary;
+    }
+
+    .select-box {
+      margin-left: 5px;
+      padding: 0 8px;
+      border-left: 1px solid #dedfe2;
+
+      select {
+        border: none;
+        outline: none;
+        color: #7e7e7e;
+      }
+    }
+  }
+
+  &__link-box:not(:first-child) {
+    margin-left: 20px;
+    padding: 0 10px;
+    border-left: 1px solid #dedfe2;
+  }
 }
