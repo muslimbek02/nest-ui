@@ -1,47 +1,6 @@
-/* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap");
+@use '../../styles/global' as *;
 
-$font-primary: "Quicksand", sans-serif;
-$font-secondary: "Lato", sans-serif;
 
-/* COLORS */
-$color-primary: #3bb77e;
-$main-text-color: #253d4e;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-family: $font-primary;
-  color: $main-text-color;
-  background-color: #fff;
-}
-.container {
-  width: 100%;
-  max-width: 1310px;
-  margin: 0 auto;
-  padding: 0 60px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  background-color: transparent;
-  color: inherit;
-}
-
-/* Header styles */
 .header-top-inner {
   display: flex;
   align-items: center;
